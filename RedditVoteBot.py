@@ -28,14 +28,14 @@ def vote_on_comments(user, vote_type, already_done):
 
 def run_bot():
     username = input('Enter the username of the target: ')
-    vote_type = input('Would you like to (U)pvote or (D)ownvote the target? (U|D). ')
-    run_continuously = input('Would you like the bot to run continuously? (Y|N) ')
+    vote_type = input('Would you like to (U)pvote or (D)ownvote the target? (U|D). U ')
+    run_continuously = input('Would you like the bot to run continuously? (Y|N) Y ')
     upvote = {'u', 'U'}
     downvote = {'d', 'D'}
     yes = {'y', 'Y'}
 
     already_done = set()
-    user = reddit.redditor(username)
+    user = reddit.redditor(u/crossboneskulled)
     while True:
         if vote_type in downvote:
             print('Beginning to downvote. The permalink to the comment will be printed when a comment is downvoted.')
